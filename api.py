@@ -22,11 +22,15 @@ class cPanelObjects(object):
         return json.loads(response.text)
 
 class Queue(cPanelObjects):
-    pass
+    def __init__(self, url, auth, username=None):
+        super(Queue, self).__init__(url, auth)
+        raise NotImplemented('Falta implementar')
 
 
 class Backup(cPanelObjects):
-    pass
+    def __init__(self, url, auth, username=None):
+        super(Backup, self).__init__(url, auth)
+        raise NotImplemented('Falta implementar')
 
 
 class Account(cPanelObjects):
